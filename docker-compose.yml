@@ -6,5 +6,5 @@ services:
       - "2027:80"
     volumes:
       - ".:/var/www/docs2:ro"
-      - "./nginx.conf:/etc/nginx/conf.d/defult.conf:ro"
+      - "./nginx.conf:/etc/nginx/conf.d/default.conf:ro"
     restart: unless-stopped

@@ -1,0 +1,10 @@
+service:
+  nginx:
+    image: nginx:alpine
+    container_name: docs2-nginx
+    ports:
+      - "2027:80"
+    volumes:
+      - ".:/var/www/docs2:ro"
+      - "./nginx.conf:/etc/nginx/conf.d/defult.conf:ro"
+    restart: unless-stopped

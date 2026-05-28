@@ -1,4 +1,4 @@
-service:
+services:
   nginx:
     image: nginx:alpine
     container_name: commands-nginx

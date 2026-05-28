@@ -1,7 +1,7 @@
 service:
   nginx:
     image: nginx:alpine
-    container_name: docs2-nginx
+    container_name: commands-nginx
     ports:
       - "2027:80"
     volumes:
